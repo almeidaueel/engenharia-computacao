@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <locale.h>
-#include <math.h>
 
-int main() {
+
+int main(void) {
     setlocale(LC_ALL, "Portuguese");
     int n, fatorial = 1;
 
@@ -10,9 +10,7 @@ int main() {
     scanf("%d", &n);
 
     do {
-        if (n < 0) {
-            printf("Digite um número inteiro positivo.\n");
-        }
+        printf("Digite um número inteiro positivo.\n");
         printf("Digite um número: ");
         scanf("%d", &n);
     } while (n < 0);
@@ -22,6 +20,5 @@ int main() {
     }
 
     printf("O fatorial de %d é: %d\n", n, fatorial);
-
     return 0;
 }
